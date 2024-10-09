@@ -1,0 +1,116 @@
+@font-face {
+    font-family: montHeavy;
+    src: url(./mont/Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+    font-family: montLight;
+    src: url(./mont/Mont-ExtraLightDEMO.otf);
+}
+@font-face {
+    font-family: theSans;
+    src: url('TheSans C5/Desktop Fonts/TheSansC5-5_Plain.otf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montLight;
+    justify-content: center;
+
+
+}
+
+.containerContent {
+    max-width: 1512px;
+    margin: auto;
+    /*background-color: red;*/
+}
+
+.containerFacts {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*background-color: blue;*/
+    gap: 112px;
+
+}
+
+.tile {
+    /*display: flex;*/
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 260px;
+    height: 218px;
+    /*background-color: yellow;*/
+    flex-direction:column;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+.tileContent {
+   /*background-color: antiquewhite;*/
+   flex-grow: 0;
+   flex-shrink: 0;
+   height: 119px;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+
+}
+.tileText {
+    /*background-color: blueviolet;*/
+    font-family: theSans;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+
+.counter{
+    color: #FFB300;
+    font-size: 64px;
+    text-align: center;
+    font-family: montHeavy;
+    font-weight: 900;
+
+}
+
+.bulb {
+    content: url("image/BulbOutlined.svg");
+    margin: auto;
+    
+}
+
+.containerFacts .tile:has(.bulb) {
+      /*display: flex;*/
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 260px;
+      height: 280px;
+      /*background-color: yellow;*/
+      flex-direction:column;
+      align-items: center;
+      gap: 30px;
+     
+}
+
+.tile:not(:has(.bulb)) {
+    margin-top: 51px;
+}
